@@ -1,4 +1,4 @@
-#include <DallasTemperature.h>
+﻿#include <DallasTemperature.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 #include <OneWire.h>
@@ -311,7 +311,7 @@ else {
 void procesGotowania(){
   Grzanie(true);
    EKRAN(4);
-  while((printTemperature(insideThermometer)<=30.5)){delay(TIMER_REFRESH);}//99.5
+  while((printTemperature(insideThermometer)<=100.5)){delay(TIMER_REFRESH);}//99.5
 //  Grzanie(LOW);
   //BEEEEEEEEEEEEEEEEEP
    unsigned long time0=millis(),timeNow=time0,timeTill=stackGotowanie[stackGotowanieCounter].czas;
